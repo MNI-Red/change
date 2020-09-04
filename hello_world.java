@@ -1,7 +1,7 @@
 public class hello_world {
 	public static void main (String [] args)
 	{
-		System.out.println("Number of ways: " + NumberOfWaysToMakeChange(6)); 
+		System.out.println("Number of ways: " + NumberOfWaysToMakeChange(25)); 
 	}
 
 	public static int NumberOfWaysToMakeChange(int cents)
@@ -9,7 +9,11 @@ public class hello_world {
 		int ways = 1;
 		if (cents <= 0)
 		{
-			return ways;
+			return 0;
+		}
+		else if (cents == 1)
+		{
+			return 1;
 		}
 		else
 		{
